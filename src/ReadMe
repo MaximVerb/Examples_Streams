@@ -1,0 +1,15 @@
+Een stream kan maar één keer gebruikt worden en houdt op bij een terminal operator.
+Waarom kan een stream maar één keer gebruikt worden? Omdat de originele data die erin vervat zit,
+al verandert is na alle functies, daarom heb je er een nieuwe nodig bij andere functies.
+Let ook zeer goed op bij de sequentie van de functies die je uitoefent op een stream.
+Voorbeeld :
+IntStream.rangeClosed(1,10)
+        .filter(x -> x % 2 == 0)
+        .map(x -> x * 2)
+        .sum()
+
+is in de verste verte niet hetzelfde als :
+IntStream.rangeClosed(1,10)
+        .map(x -> x * 2)
+        .filter(x -> x % 2 == 0)
+        .sum()

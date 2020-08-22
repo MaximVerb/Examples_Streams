@@ -1,0 +1,6 @@
+- map : elementen van de stream omzetten naar elementen van eenzelfde type
+- mapTo : elementen van een stream omzetten naar elementen van een ander type
+- filter: geeft een stream terug gebaseerd op een voorwaarde (ook wel bekend als een predicate)
+- distinct : geeft een stream terug met enkel unieke elementen
+- limit : geeft een stream terug met enkel een bepaald aantal elementen
+- sorted: geeft een gesorteerde stream terug

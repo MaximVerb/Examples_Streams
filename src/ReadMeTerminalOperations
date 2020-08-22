@@ -1,0 +1,13 @@
+Een terminalOperator beeindigt een stream, dus na onderstaande operatoren te gebruiken, kun je niet nog
+een methode gaan gebruiken (bijvoorbeeld na count, kun je niet filter doen of average)
+
+- forEach : doet iets met ieder element van de stream, stel dat je er een tweede lijn code aan toevoegt
+dan zal de iterator toch eerst alle elementen overlopen, voordat de volgende lijn code wordt uitgevoerd
+- collect : om bijvoorbeeld een stream om te zetten naar een collectie vb collect(Collectors.toList())
+Reducerende operaties: (maakt van alle elementen in de stream, één waarde)
+- count
+- min
+- max
+- average
+- summarySatistics = all of the above
+- reduce : speciale methode, en eigenlijk zijn count, min en max gespecialiseerde reduce methoden
