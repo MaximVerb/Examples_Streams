@@ -4,6 +4,7 @@ een methode gaan gebruiken (bijvoorbeeld na count, kun je niet filter doen of av
 - forEach : doet iets met ieder element van de stream, stel dat je er een tweede lijn code aan toevoegt
 dan zal de iterator toch eerst alle elementen overlopen, voordat de volgende lijn code wordt uitgevoerd
 - collect : om bijvoorbeeld een stream om te zetten naar een collectie vb collect(Collectors.toList())
+
 Reducerende operaties: (maakt van alle elementen in de stream, één waarde)
 - count
 - min
@@ -11,3 +12,12 @@ Reducerende operaties: (maakt van alle elementen in de stream, één waarde)
 - average
 - summarySatistics = all of the above
 - reduce : speciale methode, en eigenlijk zijn count, min en max gespecialiseerde reduce methoden
+
+Search related terminal operations:
+- finAny : geeft het eerste element terug dat er gevonden wordt en dan houdt de stream op
+- anyMatch :    bekijkt of er tenminste één element voldoet aan een aantal voorwaarden.
+                Is het WEL zo dan geeft het true terug, anders
+                false.
+- allMatch :    bekijkt of alle elementen in een stream voldoen aan bepaalde voorwaarden, indien er één element
+                niet voldoet aan de voorwaarden, houdt de stream meteen op
+
