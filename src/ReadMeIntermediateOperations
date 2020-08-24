@@ -1,4 +1,4 @@
-- map : elementen van de stream omzetten naar elementen van eenzelfde type
+- map : elementen van de stream omzetten naar elementen van een ander type
 - mapTo : elementen van een stream omzetten naar elementen van een ander type
 - filter: geeft een stream terug gebaseerd op een voorwaarde (ook wel bekend als een predicate)
 - distinct : geeft een stream terug met enkel unieke elementen
